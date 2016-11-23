@@ -3,29 +3,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Contact extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
+	function __construct()
+	{
+		parent::__construct();
+	}
 
-	
 	public function index()
 	{
 		$this->load->view('principal/contacto');
 	}
+
 	public function guardarContacto()
 	{
-		$this->load->view('principal/contacto');
+		$nombre=$this->input->post('nombre');
+		$email=$this->input->post('email');
+		$asunto=$this->input->post('asunto');
+		$comentario=$this->input->post('comentario');
+
+
+      	$this->load->model('contacto_model');
+      	$this->contacto_model->insertar_contacto($nombre,$email,$asunto,$comentario);
+
+		redirect(base_url().'index.php/Contact');
+		
 	}
 }
