@@ -56,8 +56,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href=" <?php echo base_url(); ?>/index.php/Principal">Home</a></li>
-       <li><a href=" <?php echo base_url(); ?>index.php/Productos ">Products</a></li>
-        <li><a href=" <?php echo base_url(); ?>index.php/Contact ">Contacto</a></li>        
+       <li><a href=" <?php echo base_url(); ?>index.php/Productos">Products</a></li>
+        <li><a href=" <?php echo base_url(); ?>index.php/Contact">Contacto</a></li>    
+         <li><a href=" <?php echo base_url(); ?>index.php/Agregar_productos">Agregar Productos</a></li>    
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

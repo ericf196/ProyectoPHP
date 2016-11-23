@@ -1,5 +1,4 @@
 
-  
 <div class="container">
   <h2>Contactanos</h2>
   <form name="formulario_contacto" method="POST" action="<?php echo base_url();?>index.php/Contact/guardarContacto">
@@ -20,6 +19,9 @@
       <label for="comentario">Cometario:</label>
       <textarea id="comentario" name="comentario" class="form-control" rows="4" cols="50" name="comentario" placeholder="Comentario"></textarea>
     </div>
+
+
+
     
     <button type="submit" class="btn btn-default">Enviar</button>
   </form>
