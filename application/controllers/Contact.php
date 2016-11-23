@@ -10,7 +10,9 @@ class Contact extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('principal/header');
 		$this->load->view('principal/contacto');
+		$this->load->view('principal/footer');
 	}
 
 	public function guardarContacto()
