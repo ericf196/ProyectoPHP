@@ -1,13 +1,12 @@
 
 <div class="container">
   <h2>List Group With Badges</h2>
+  <!--<? #php print_r($producto) ?>-->
   <ul class="list-group">
-    <li class="list-group-item">New <span class="badge">12</span></li>
-    <li class="list-group-item">Deleted <span class="badge">5</span></li>
-    <li class="list-group-item">Warnings <span class="badge">3</span></li>
+  	<?php foreach($producto as $producto_item): ?>
+    <li class="list-group-item"> <?php echo $producto_item->nombreProducto; ?> <span class="badge"><?php echo $producto_item->idProducto; ?></span></li>
+    <?php endforeach; ?>
   </ul>
 </div>
 
 <br/>
-
-

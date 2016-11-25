@@ -27,25 +27,20 @@ class Producto_model extends CI_Model
 
 	function get_producto()
 		{
-			$query = $this->db->get('productos', 0, 6);
-			$query=$this->$query->order_by('idProducto', 'DESC');
-			print_r($query);
-			//echo $this->html();
+			
+			//$query=$this->db->order_by('idProducto', 'DESC');
+			//$query=$this->db->get('productos',6);
+			$query=$this->db->get('productos');
+			$resultado = $query->result();
+			return $resultado;
+
+			/*$this->db->select('id, titulo, descripcion, prioridad');
+     		 $this->db->from('informes');
+     		$this->db->order_by('prioridad, titulo', 'asc');
+      		$consulta = $this->db->get();
+     		 $resultado = $consulta->result();
+      		return $resultado;*/
 			
 		}
-
-
-		/*public function html($value='')
-        {
-                return "
-                <html>
-                <head>
-                        <title> Upload Error </title>
-                </head>
-                <body>
-               
-                </body>
-                </html>";
-        }*/
 
 }
