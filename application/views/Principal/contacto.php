@@ -19,9 +19,6 @@
       <label for="comentario">Cometario:</label>
       <textarea id="comentario" name="comentario" class="form-control" rows="4" cols="50" name="comentario" placeholder="Comentario"></textarea>
     </div>
-
-
-
     
     <button type="submit" class="btn btn-default">Enviar</button>
   </form>

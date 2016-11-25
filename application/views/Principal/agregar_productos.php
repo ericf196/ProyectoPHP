@@ -90,7 +90,7 @@ $(function() {
 
 <div class="container">
   <h2>Contactanos</h2>
-  <form name="formulario_contacto" method="POST" action="<?php echo base_url();?>index.php/Contact/guardarContacto">
+  <form enctype="multipart/form-data" name="formulario_contacto" method="POST" action="<?php echo base_url();?>index.php/Agregar_productos/guardarProducto">
     <div class="form-group">
       <label for="nombre_imagen">Nombre de la imagen:</label>
       <input type="text" name="nombre_imagen" class="form-control" id="nombre_imagen" placeholder="Nombre imagen">
@@ -118,7 +118,7 @@ $(function() {
                       <div class="btn btn-default image-preview-input">
                           <span class="glyphicon glyphicon-folder-open"></span>
                           <span class="image-preview-input-title">Buscar</span>
-                          <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
+                          <input type="file" name="photo"/> <!-- rename it -->                        
                       </div>
                   </span>
               </div><!-- /input-group image-preview [TO HERE]--> 
