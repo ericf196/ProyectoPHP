@@ -27,11 +27,16 @@ class Producto_model extends CI_Model
 
 	function get_producto()
 		{
-			
-			//$query=$this->db->order_by('idProducto', 'DESC');
-			//$query=$this->db->get('productos',6);
-			$query=$this->db->get('productos');
+	
+			$this->db->select('*');
+			$this->db->from('productos');
+			//$this->db->where('tennant_id',$tennant_id);
+   			$this->db->order_by("idProducto","DESC");
+   			$this->db->limit(6);
+   			
+			$query = $this->db->get();
 			$resultado = $query->result();
+
 			return $resultado;
 
 			/*$this->db->select('id, titulo, descripcion, prioridad');
