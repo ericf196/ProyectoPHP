@@ -14,7 +14,7 @@ class Contacto_model extends CI_Model
 				'contactoNombre' => $nombre,
 				'contactoEmail' => $email,
 				'contactoAsunto' => $asunto,
-				'contactoAsunto'=>$comentario
+				'contactoComentario'=>$comentario
 				);
 		//aqui se realiza la inserción, si queremos devolver algo deberíamos usar delantre return
 		//y en el controlador despues de $nueva_insercion poner lo que queremos hacer, redirigir,

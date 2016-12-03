@@ -50,6 +50,7 @@ class File extends CI_Model {
                 <head>
                         <title> Upload Error </title>
                 </head>
+                
                 <body>
                
                 </body>

@@ -29,10 +29,6 @@ class Productos extends CI_Controller {
 		}
 		return $productos;
 
-
-
-
-
 	}
 
 
