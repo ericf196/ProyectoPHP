@@ -2,8 +2,6 @@
 <div class="container">
   <div class="row">
 
-
-
 <?php foreach($producto as $producto_item): ?>
 
     <div class="col-sm-4">
